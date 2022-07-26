@@ -1,0 +1,53 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: rgb(215,230,199);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+    height: 15em;
+    width: 12em;
+}
+
+button {
+    background-color: rgb(68, 100, 68);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 2em;
+    margin-left: 0.5em;
+}
+
+button:hover {
+    background-color: rgb(68, 175, 68);
+}
+
+.error {
+    color: red;
+    margin-left: 5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mb-3 {
+    margin-bottom: 3em;
+}
+
+.card-container {
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+h1, h3 {
+    text-align: center;
+}

@@ -17,6 +17,10 @@ export class DogDisplayComponent implements OnInit {
     this.saveTheDogsService.getDogs(breed).subscribe(data => this.dogs = data)
   }
 
+  clear(){
+    this.dogs = [];
+  }
+
   ngOnInit(): void {
   }
 
