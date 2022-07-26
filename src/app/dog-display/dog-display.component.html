@@ -1,0 +1,13 @@
+<h1>Animal Shelter</h1>
+<h3>Adoptable Dogs</h3>
+<label for="breed">Breed:</label>
+<input id="breed" placeholder="breed" #breed >
+<button (click)="getDogs(breed.value); breed.value=''"  >Search</button>
+<div class="container">
+  <div class="card" *ngFor="let dog of dogs">
+    <div><img src="../assets/dogicon.png" height="70px"></div>
+    <h3>{{dog!.name}}</h3>
+    <div>Breed: {{dog!.breed}}</div>
+    <div>Age: {{dog!.age}}</div>
+</div>
+ </div>
